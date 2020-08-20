@@ -6,23 +6,58 @@
     <title>Projections</title>
 </head>
 <body>
-    <h1>In this project I learned how to display images in different projections</h1>
+    <h1>Christian Rasnake: Homework 2</h1>
     
-    <h2 style="color:red">Describe in your own words how you displayed the map in different projections using QGIS</h2>
-    <p>You can write a paragraph here</p>
+    <h2 style="color:blue">For Homework 2, I displayed the world map in different projections using QGIS</h2>
+    <p>The different projections I used are WGS84, Aitoff, Pseudo Mercator, World Winkel, World Cylindrical, World Equidistant Conic, North Pole Azimuthal Equidistant, World Robinson, and Sphere Miller Cylindrical. I have described the consequences of each projection below. </p>
     
-    <h2>WGS84 Projection</h2>
-    <h3>Some observations</h3>
-    <a href=".//maps/4326.png">
-    <img src=".//maps/4326.png" alt="WGS84" width='500px'>
+    <h2 style="color: blue;">WGS84</h2>
+    <h3>This projection appears to be a flat map that is very good at displaying information near the equator, but does not do as great a job by the poles. As you move upward and downward to the poles, you can see how Antarctica seems to be very large and stretched very wide. A similar pattern can be seen by the top-most circles which are stretched wide and larger than the interior circles. </h3>
+    <a href="./maps/4326WGShw2.png">
+    <img src="./maps/4326WGShw2.png" alt="WGS84" width='500px'>
     </a>
-    <h2>Aitoff Projection</h2>
-    <h3>Some observations</h3>
-    <a href=".//maps/54043.png">
-    <img src=".//maps/54043.png" alt="Aitoff" width='500px'>
+    <h2 style="color: blue;">Aitoff</h2>
+    <h3>This projection looks more like a globe and has more shape to it than the previous. This projection does a good job at preserving size near the equator, but as you move closer to the poles, size and shape begins to get more distorted due to the curvature. </h3>
+    <a href="./maps/53043sphereaitoffhw2.png">
+    <img src="./maps/53043sphereaitoffhw2.png" alt="Aitoff" width='500px'>
     </a>
-    <h2 style="color:red">Now, you should <u>add the following projections on your own:</u></h2>
-    <h3>EPSG: 3857, 53018, 54034, 54027, 102016, and two additional projections that you choose.</h3>
+    <h2 style="color: blue;">Pseudo Mercator</h2>
+    <h3>This projection seems the most in line with what I think of when I think of a world map. This projection preserves shape, but distorts size. You can see that Greenland is the same size as the entire continent of Africa. </h3>
+    <a href="./maps/3857psuedohw2.png">
+    <img src="./maps/3857psuedohw2.png" alt="Pseudo Mercator" width='500px'>
+    </a>
+    <h2 style="color: blue;">World Winkel</h2>
+    <h3>This projection looks similar to the Aitoff projection, but looks like it maintains the map's characteristics better. There seems to be only a slight distortion of size as you approach the poles, with shape remaining relatively accurate.  </h3>
+    <a href="./maps/53018winkelhw2.png">
+    <img src="./maps/53018winkelhw2.png" alt="Winkel" width='500px'>
+    </a>
+    <h2 style="color: blue;">World Cylindrical</h2>
+    <h3>The World Cylindrical projection preserves area but distorts scale and shape, especially toward the arctic. Since the parallels and meridians are straight lines in this projection, it does not take into account the curvature of our planet earth. </h3>
+    <a href="./maps/54034cylindricalhw2.png">
+    <img src="./maps/54034cylindricalhw2.png" alt="World Cylindrical" width='500px'>
+    </a>
+    <h2 style="color: blue;">World Equidistant Conic</h2>
+    <h3>Conical projections are good for mapping long east-west regions, but it is not good for projecting the full planet. This is useful for mapping distances between places, since distances are accurately represented in an equidistant projection. Furthermore, the area of this projection is distorted but the scale is preserved. </h3>
+    <a href="./maps/54027equidistantconichw2.png">
+    <img src="./maps/54027equidistantconichw2.png" alt="Equidistant Conic" width='500px'>
+    </a>
+    <h2 style="color: blue;">North Pole Azimuthal Equidistant</h2>
+    <h3>This projection successfully preserves the distance and direction from the North Pole. It gives a fuller view of the planet when compared to the previous World Equidistant Conic, but otherwise they look similar.</h3>
+    <a href="./maps/102016npoleazeqhw2.png">
+    <img src="./maps/102016npoleazeqhw2.png" alt="North Pole" width='500px'>
+    </a>
+    <h2 style="color: blue;">World Robinson</h2>
+    <h3>The World Robinson projection looks similar to the World Winkel projection, as it also has distortion toward the poles. The length of the countries also seem to be longer than other projections.</h3>
+    <a href="./maps/54030worldrobinsonhw2.png">
+    <img src="./maps/54030worldrobinsonhw2.png" alt="World Robinson" width='500px'>
+    </a>
+    <h2 style="color: blue;">Sphere Miller Cylindrical</h2>
+    <h3>Similar to the World Cylindrical projection, the Sphere Miller Cylindrical preserves area and shape near the equator, yet distorts size near the poles. In this map you can again see that Greenland looks similar in size to Africa and South America. This projection also gives a more full view of the earth that looks less compressed at the poles than the World Cylindrical projection.</h3>
+    <a href="./maps/53003millerhw2.png">
+    <img src="./maps/53003millerhw2.png" alt="Miller Cylindrical" width='500px'>
+    </a>
+    <h2 style="color:blue">This homework assignment taught me a lot about the different projections that can be used to display maps. </u></h2>
+    <h3>Each projection has its merits and drawbacks as discussed in my analyses above; specific projections are used to best display the data at hand, depending on what it includes.</h3>
     <p></p>
     <h2>Data used for this project</h2>
     <a href="https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip"> Download Natrual Earth 1:10m Cultural Vector </a>
